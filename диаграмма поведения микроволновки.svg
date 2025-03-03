@@ -1,0 +1,85 @@
+<svg width="770pt" height="181pt" viewBox="0.00 0.00 769.83 180.85" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 176.85)">
+<title>FSM</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-176.85 765.83,-176.85 765.83,4 -4,4"/>
+<!-- start -->
+<g id="node1" class="node">
+<title>start</title>
+<ellipse fill="none" stroke="black" cx="31.43" cy="-31.43" rx="31.43" ry="31.43"/>
+<text text-anchor="middle" x="31.43" y="-27.23" font-family="Arial" font-size="14.00">Start</text>
+</g>
+<!-- idle -->
+<g id="node2" class="node">
+<title>idle</title>
+<ellipse fill="none" stroke="black" cx="177.95" cy="-31.43" rx="26.61" ry="26.61"/>
+<text text-anchor="middle" x="177.95" y="-27.23" font-family="Arial" font-size="14.00">Idle</text>
+</g>
+<!-- start&#45;&gt;idle -->
+<g id="edge1" class="edge">
+<title>start-&gt;idle</title>
+<path fill="none" stroke="black" d="M63.08,-31.43C85.48,-31.43 115.97,-31.43 139.76,-31.43"/>
+<polygon fill="black" stroke="black" points="139.66,-34.93 149.66,-31.43 139.66,-27.93 139.66,-34.93"/>
+<text text-anchor="middle" x="107.1" y="-35.63" font-family="Times,serif" font-size="14.00">power on</text>
+</g>
+<!-- heating -->
+<g id="node3" class="node">
+<title>heating</title>
+<ellipse fill="none" stroke="black" cx="353.69" cy="-91.43" rx="44.32" ry="44.32"/>
+<text text-anchor="middle" x="353.69" y="-87.23" font-family="Arial" font-size="14.00">Heating</text>
+</g>
+<!-- idle&#45;&gt;heating -->
+<g id="edge2" class="edge">
+<title>idle-&gt;heating</title>
+<path fill="none" stroke="black" d="M203.48,-39.9C228.6,-48.58 268.44,-62.33 300.63,-73.45"/>
+<polygon fill="black" stroke="black" points="299.2,-76.66 309.8,-76.62 301.49,-70.04 299.2,-76.66"/>
+<text text-anchor="middle" x="256.96" y="-72.77" font-family="Times,serif" font-size="14.00">start heating</text>
+</g>
+<!-- pause -->
+<g id="node4" class="node">
+<title>pause</title>
+<ellipse fill="none" stroke="black" cx="557.57" cy="-134.43" rx="38.42" ry="38.42"/>
+<text text-anchor="middle" x="557.57" y="-130.23" font-family="Arial" font-size="14.00">Pause</text>
+</g>
+<!-- heating&#45;&gt;pause -->
+<g id="edge3" class="edge">
+<title>heating-&gt;pause</title>
+<path fill="none" stroke="black" d="M395.63,-106.55C402.38,-108.73 409.35,-110.78 416.01,-112.43 446.12,-119.88 480.5,-125.31 507.73,-128.92"/>
+<polygon fill="black" stroke="black" points="507.06,-132.36 517.42,-130.16 507.95,-125.42 507.06,-132.36"/>
+<text text-anchor="middle" x="458.58" y="-131.95" font-family="Times,serif" font-size="14.00">pause heating</text>
+</g>
+<!-- stop -->
+<g id="node5" class="node">
+<title>stop</title>
+<ellipse fill="none" stroke="black" cx="730.93" cy="-61.43" rx="30.9" ry="30.9"/>
+<text text-anchor="middle" x="730.93" y="-57.23" font-family="Arial" font-size="14.00">Stop</text>
+</g>
+<!-- heating&#45;&gt;stop -->
+<g id="edge5" class="edge">
+<title>heating-&gt;stop</title>
+<path fill="none" stroke="black" d="M397.12,-81.67C403.43,-80.44 409.87,-79.31 416.01,-78.43 513.01,-64.54 628.35,-61.77 688.6,-61.36"/>
+<polygon fill="black" stroke="black" points="688.4,-64.86 698.38,-61.31 688.36,-57.86 688.4,-64.86"/>
+<text text-anchor="middle" x="557.57" y="-71.79" font-family="Times,serif" font-size="14.00">stop heating</text>
+</g>
+<!-- pause&#45;&gt;heating -->
+<g id="edge4" class="edge">
+<title>pause-&gt;heating</title>
+<path fill="none" stroke="black" d="M529.37,-107.8C520.98,-101.23 511.27,-95.09 501.15,-91.63 471.86,-81.62 437.31,-81.08 409.13,-83.27"/>
+<polygon fill="black" stroke="black" points="409.01,-79.77 399.38,-84.18 409.66,-86.74 409.01,-79.77"/>
+<text text-anchor="middle" x="458.58" y="-95.83" font-family="Times,serif" font-size="14.00">resume heating</text>
+</g>
+<!-- pause&#45;&gt;stop -->
+<g id="edge6" class="edge">
+<title>pause-&gt;stop</title>
+<path fill="none" stroke="black" d="M593.25,-119.66C621.81,-107.49 662.28,-90.25 691.77,-77.69"/>
+<polygon fill="black" stroke="black" points="692.87,-81.02 700.7,-73.88 690.13,-74.58 692.87,-81.02"/>
+<text text-anchor="middle" x="648.01" y="-115.02" font-family="Times,serif" font-size="14.00">stop heating</text>
+</g>
+<!-- stop&#45;&gt;idle -->
+<g id="edge7" class="edge">
+<title>stop-&gt;idle</title>
+<path fill="none" stroke="black" d="M699.79,-58.84C693.9,-58.35 687.77,-57.86 682.03,-57.43 555.87,-47.94 524.37,-44.67 398.01,-38.43 334.27,-35.28 260.02,-33.25 216.39,-32.23"/>
+<polygon fill="black" stroke="black" points="216.52,-28.73 206.44,-32 216.36,-35.73 216.52,-28.73"/>
+<text text-anchor="middle" x="458.58" y="-48.3" font-family="Times,serif" font-size="14.00">end</text>
+</g>
+</g>
+</svg>
