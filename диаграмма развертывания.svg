@@ -1,0 +1,110 @@
+<svg width="1085pt" height="206pt" viewBox="0.00 0.00 1085.23 205.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 201.8)">
+<title>DeploymentDiagram</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-201.8 1081.23,-201.8 1081.23,4 -4,4"/>
+<!-- Server1 -->
+<g id="node1" class="node">
+<title>Server1</title>
+<polygon fill="none" stroke="black" points="623.17,-109 493.56,-109 493.56,-73 623.17,-73 623.17,-109"/>
+<text text-anchor="middle" x="558.36" y="-86.8" font-family="Arial" font-size="14.00">Application Server</text>
+</g>
+<!-- DispatcherModule -->
+<g id="node4" class="node">
+<title>DispatcherModule</title>
+<polygon fill="none" stroke="black" points="132.72,-36 0,-36 0,0 132.72,0 132.72,-36"/>
+<text text-anchor="middle" x="66.36" y="-13.8" font-family="Arial" font-size="14.00">Dispatcher Module</text>
+</g>
+<!-- Server1&#45;&gt;DispatcherModule -->
+<g id="edge1" class="edge">
+<title>Server1-&gt;DispatcherModule</title>
+<path fill="none" stroke="black" d="M493.23,-83.4C413.43,-74.9 273.91,-58.71 144.32,-36.25"/>
+<polygon fill="black" stroke="black" points="144.97,-32.81 134.51,-34.53 143.76,-39.7 144.97,-32.81"/>
+</g>
+<!-- RepairManagementModule -->
+<g id="node5" class="node">
+<title>RepairManagementModule</title>
+<polygon fill="none" stroke="black" points="343.69,-36 151.03,-36 151.03,0 343.69,0 343.69,-36"/>
+<text text-anchor="middle" x="247.36" y="-13.8" font-family="Arial" font-size="14.00">Repair Management Module</text>
+</g>
+<!-- Server1&#45;&gt;RepairManagementModule -->
+<g id="edge2" class="edge">
+<title>Server1-&gt;RepairManagementModule</title>
+<path fill="none" stroke="black" d="M493.17,-75.12C447.3,-64.64 385.39,-50.51 335.17,-39.05"/>
+<polygon fill="black" stroke="black" points="336,-35.65 325.47,-36.83 334.44,-42.47 336,-35.65"/>
+</g>
+<!-- WorkerManagementModule -->
+<g id="node6" class="node">
+<title>WorkerManagementModule</title>
+<polygon fill="none" stroke="black" points="558.62,-36 362.1,-36 362.1,0 558.62,0 558.62,-36"/>
+<text text-anchor="middle" x="460.36" y="-13.8" font-family="Arial" font-size="14.00">Worker Management Module</text>
+</g>
+<!-- Server1&#45;&gt;WorkerManagementModule -->
+<g id="edge3" class="edge">
+<title>Server1-&gt;WorkerManagementModule</title>
+<path fill="none" stroke="black" d="M534.39,-72.63C522.05,-63.69 506.82,-52.66 493.38,-42.92"/>
+<polygon fill="black" stroke="black" points="495.8,-40.36 485.65,-37.32 491.7,-46.02 495.8,-40.36"/>
+</g>
+<!-- QualityControlModule -->
+<g id="node7" class="node">
+<title>QualityControlModule</title>
+<polygon fill="none" stroke="black" points="734.56,-36 576.16,-36 576.16,0 734.56,0 734.56,-36"/>
+<text text-anchor="middle" x="655.36" y="-13.8" font-family="Arial" font-size="14.00">Quality Control Module</text>
+</g>
+<!-- Server1&#45;&gt;QualityControlModule -->
+<g id="edge4" class="edge">
+<title>Server1-&gt;QualityControlModule</title>
+<path fill="none" stroke="black" d="M581.84,-72.81C594.14,-63.81 609.4,-52.64 622.82,-42.82"/>
+<polygon fill="black" stroke="black" points="624.54,-45.9 630.54,-37.17 620.4,-40.25 624.54,-45.9"/>
+</g>
+<!-- ReportGenerationModule -->
+<g id="node8" class="node">
+<title>ReportGenerationModule</title>
+<polygon fill="none" stroke="black" points="933.85,-36 752.87,-36 752.87,0 933.85,0 933.85,-36"/>
+<text text-anchor="middle" x="843.36" y="-13.8" font-family="Arial" font-size="14.00">Report Generation Module</text>
+</g>
+<!-- Server1&#45;&gt;ReportGenerationModule -->
+<g id="edge5" class="edge">
+<title>Server1-&gt;ReportGenerationModule</title>
+<path fill="none" stroke="black" d="M623.39,-73.8C664.58,-63.54 718.19,-50.18 762.17,-39.23"/>
+<polygon fill="black" stroke="black" points="762.8,-42.68 771.66,-36.86 761.11,-35.88 762.8,-42.68"/>
+</g>
+<!-- Server2 -->
+<g id="node2" class="node">
+<title>Server2</title>
+<polygon fill="none" stroke="black" points="1020.89,-109 899.83,-109 899.83,-73 1020.89,-73 1020.89,-109"/>
+<text text-anchor="middle" x="960.36" y="-86.8" font-family="Arial" font-size="14.00">Database Server</text>
+</g>
+<!-- DatabaseModule -->
+<g id="node9" class="node">
+<title>DatabaseModule</title>
+<polygon fill="none" stroke="black" points="1077.23,-36 951.49,-36 951.49,0 1077.23,0 1077.23,-36"/>
+<text text-anchor="middle" x="1014.36" y="-13.8" font-family="Arial" font-size="14.00">Database Module</text>
+</g>
+<!-- Server2&#45;&gt;DatabaseModule -->
+<g id="edge6" class="edge">
+<title>Server2-&gt;DatabaseModule</title>
+<path fill="none" stroke="black" d="M973.43,-72.81C979.8,-64.44 987.59,-54.2 994.66,-44.9"/>
+<polygon fill="black" stroke="black" points="997.23,-47.31 1000.49,-37.23 991.65,-43.07 997.23,-47.31"/>
+</g>
+<!-- ClientWorkstations -->
+<g id="node3" class="node">
+<title>ClientWorkstations</title>
+<polygon fill="none" stroke="black" points="805.66,-197.8 669.07,-197.8 669.07,-161.8 805.66,-161.8 805.66,-197.8"/>
+<text text-anchor="middle" x="737.36" y="-175.6" font-family="Arial" font-size="14.00">Client Workstations</text>
+</g>
+<!-- ClientWorkstations&#45;&gt;Server1 -->
+<g id="edge7" class="edge">
+<title>ClientWorkstations-&gt;Server1</title>
+<path fill="none" stroke="black" d="M701.57,-161.44C673.73,-147.95 634.9,-129.11 604.69,-114.47"/>
+<polygon fill="black" stroke="black" points="606.29,-111.35 595.76,-110.14 603.23,-117.65 606.29,-111.35"/>
+<text text-anchor="middle" x="713.07" y="-131.2" font-family="Times,serif" font-size="14.00">accesses modules</text>
+</g>
+<!-- ClientWorkstations&#45;&gt;Server2 -->
+<g id="edge8" class="edge">
+<title>ClientWorkstations-&gt;Server2</title>
+<path fill="none" stroke="black" d="M782.22,-161.34C817.68,-147.54 867.34,-128.21 905.22,-113.46"/>
+<polygon fill="black" stroke="black" points="906.11,-116.87 914.16,-109.98 903.58,-110.35 906.11,-116.87"/>
+<text text-anchor="middle" x="918.39" y="-131.2" font-family="Times,serif" font-size="14.00">accesses database</text>
+</g>
+</g>
+</svg>

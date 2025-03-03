@@ -1,0 +1,158 @@
+<svg width="375pt" height="887pt" viewBox="0.00 0.00 374.66 887.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 883)">
+<title>ClassDiagram</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-883 370.66,-883 370.66,4 -4,4"/>
+<!-- Car -->
+<g id="node1" class="node">
+<title>Car</title>
+<polygon fill="none" stroke="black" points="91.7,-324.9 91.7,-408.1 228.3,-408.1 228.3,-324.9 91.7,-324.9"/>
+<text text-anchor="middle" x="160" y="-391.5" font-family="Arial" font-size="14.00">Car</text>
+<polyline fill="none" stroke="black" points="91.7,-383.3 228.3,-383.3"/>
+<text text-anchor="middle" x="160" y="-366.7" font-family="Arial" font-size="14.00">car_number : string</text>
+<text text-anchor="middle" x="160" y="-349.9" font-family="Arial" font-size="14.00">date_in : date</text>
+<text text-anchor="middle" x="160" y="-333.1" font-family="Arial" font-size="14.00">repair_zone : string</text>
+</g>
+<!-- Defect -->
+<g id="node6" class="node">
+<title>Defect</title>
+<polygon fill="none" stroke="black" points="67.19,-137.5 67.19,-271.1 252.81,-271.1 252.81,-137.5 67.19,-137.5"/>
+<text text-anchor="middle" x="160" y="-254.5" font-family="Arial" font-size="14.00">Defect</text>
+<polyline fill="none" stroke="black" points="67.19,-246.3 252.81,-246.3"/>
+<text text-anchor="middle" x="160" y="-229.7" font-family="Arial" font-size="14.00">defect_id : string</text>
+<text text-anchor="middle" x="160" y="-212.9" font-family="Arial" font-size="14.00">defect_location : string</text>
+<text text-anchor="middle" x="160" y="-196.1" font-family="Arial" font-size="14.00">cause : string</text>
+<text text-anchor="middle" x="160" y="-179.3" font-family="Arial" font-size="14.00">diagnostic_worker : Worker</text>
+<text text-anchor="middle" x="160" y="-162.5" font-family="Arial" font-size="14.00">repair_start_time : time</text>
+<text text-anchor="middle" x="160" y="-145.7" font-family="Arial" font-size="14.00">repair_end_time : time</text>
+</g>
+<!-- Car&#45;&gt;Defect -->
+<g id="edge1" class="edge">
+<title>Car-&gt;Defect</title>
+<path fill="none" stroke="black" d="M160,-324.66C160,-311.93 160,-297.45 160,-283.06"/>
+<polygon fill="black" stroke="black" points="163.5,-283.1 160,-273.1 156.5,-283.1 163.5,-283.1"/>
+<text text-anchor="middle" x="188.18" y="-293.8" font-family="Times,serif" font-size="14.00">has defect</text>
+</g>
+<!-- RepairZone -->
+<g id="node2" class="node">
+<title>RepairZone</title>
+<polygon fill="none" stroke="black" points="172.42,-598.9 172.42,-634.9 261.58,-634.9 261.58,-598.9 172.42,-598.9"/>
+<text text-anchor="middle" x="217" y="-615.8" font-family="Arial" font-size="14.00">RepairZone</text>
+<polyline fill="none" stroke="black" points="172.42,-605.1 261.58,-605.1"/>
+</g>
+<!-- RepairPlace -->
+<g id="node3" class="node">
+<title>RepairPlace</title>
+<polygon fill="none" stroke="black" points="150.25,-461.9 150.25,-545.1 283.75,-545.1 283.75,-461.9 150.25,-461.9"/>
+<text text-anchor="middle" x="217" y="-528.5" font-family="Arial" font-size="14.00">RepairPlace</text>
+<polyline fill="none" stroke="black" points="150.25,-520.3 283.75,-520.3"/>
+<text text-anchor="middle" x="217" y="-503.7" font-family="Arial" font-size="14.00">place_id : string</text>
+<text text-anchor="middle" x="217" y="-486.9" font-family="Arial" font-size="14.00">is_occupied : bool</text>
+<text text-anchor="middle" x="217" y="-470.1" font-family="Arial" font-size="14.00">assigned_car : Car</text>
+</g>
+<!-- RepairZone&#45;&gt;RepairPlace -->
+<g id="edge2" class="edge">
+<title>RepairZone-&gt;RepairPlace</title>
+<path fill="none" stroke="black" d="M217,-598.49C217,-587.18 217,-571.78 217,-556.72"/>
+<polygon fill="black" stroke="black" points="220.5,-556.86 217,-546.86 213.5,-556.86 220.5,-556.86"/>
+<text text-anchor="middle" x="240.33" y="-567.8" font-family="Times,serif" font-size="14.00">contains</text>
+</g>
+<!-- RepairPlace&#45;&gt;Car -->
+<g id="edge3" class="edge">
+<title>RepairPlace-&gt;Car</title>
+<path fill="none" stroke="black" d="M199.74,-461.63C194.05,-448.15 187.65,-432.98 181.67,-418.82"/>
+<polygon fill="black" stroke="black" points="184.9,-417.48 177.79,-409.63 178.45,-420.2 184.9,-417.48"/>
+<text text-anchor="middle" x="223.21" y="-430.8" font-family="Times,serif" font-size="14.00">assigned to</text>
+</g>
+<!-- RepairTeam -->
+<g id="node4" class="node">
+<title>RepairTeam</title>
+<polygon fill="none" stroke="black" points="81.49,-688.7 81.49,-724.7 174.51,-724.7 174.51,-688.7 81.49,-688.7"/>
+<text text-anchor="middle" x="128" y="-705.6" font-family="Arial" font-size="14.00">RepairTeam</text>
+<polyline fill="none" stroke="black" points="81.49,-694.9 174.51,-694.9"/>
+</g>
+<!-- RepairTeam&#45;&gt;RepairZone -->
+<g id="edge5" class="edge">
+<title>RepairTeam-&gt;RepairZone</title>
+<path fill="none" stroke="black" d="M134.8,-688.68C139.83,-677.67 147.51,-663.54 157.4,-653.4 161.6,-649.09 166.44,-645.11 171.5,-641.49"/>
+<polygon fill="black" stroke="black" points="173.07,-644.64 179.5,-636.22 169.22,-638.8 173.07,-644.64"/>
+<text text-anchor="middle" x="188.7" y="-657.6" font-family="Times,serif" font-size="14.00">assigned to</text>
+</g>
+<!-- Worker -->
+<g id="node5" class="node">
+<title>Worker</title>
+<polygon fill="none" stroke="black" points="95.98,-0.5 95.98,-83.7 224.02,-83.7 224.02,-0.5 95.98,-0.5"/>
+<text text-anchor="middle" x="160" y="-67.1" font-family="Arial" font-size="14.00">Worker</text>
+<polyline fill="none" stroke="black" points="95.98,-58.9 224.02,-58.9"/>
+<text text-anchor="middle" x="160" y="-42.3" font-family="Arial" font-size="14.00">worker_id : string</text>
+<text text-anchor="middle" x="160" y="-25.5" font-family="Arial" font-size="14.00">name : string</text>
+<text text-anchor="middle" x="160" y="-8.7" font-family="Arial" font-size="14.00">shifts_worked : int</text>
+</g>
+<!-- RepairTeam&#45;&gt;Worker -->
+<g id="edge4" class="edge">
+<title>RepairTeam-&gt;Worker</title>
+<path fill="none" stroke="black" d="M81.06,-694.04C44.53,-681.83 0,-658.59 0,-617.9 0,-617.9 0,-617.9 0,-203.3 0,-150.31 44.37,-108.71 86.37,-81.19"/>
+<polygon fill="black" stroke="black" points="87.99,-84.31 94.57,-76 84.24,-78.4 87.99,-84.31"/>
+<text text-anchor="middle" x="9.33" y="-430.8" font-family="Times,serif" font-size="14.00">has</text>
+</g>
+<!-- Defect&#45;&gt;Worker -->
+<g id="edge6" class="edge">
+<title>Defect-&gt;Worker</title>
+<path fill="none" stroke="black" d="M160,-137.22C160,-123.22 160,-108.63 160,-95.23"/>
+<polygon fill="black" stroke="black" points="163.5,-95.33 160,-85.33 156.5,-95.33 163.5,-95.33"/>
+<text text-anchor="middle" x="197.13" y="-106.4" font-family="Times,serif" font-size="14.00">diagnosed by</text>
+</g>
+<!-- QualityControl -->
+<g id="node7" class="node">
+<title>QualityControl</title>
+<polygon fill="none" stroke="black" points="27.65,-485.5 27.65,-521.5 132.35,-521.5 132.35,-485.5 27.65,-485.5"/>
+<text text-anchor="middle" x="80" y="-502.4" font-family="Arial" font-size="14.00">QualityControl</text>
+<polyline fill="none" stroke="black" points="27.65,-491.7 132.35,-491.7"/>
+</g>
+<!-- QualityControl&#45;&gt;Car -->
+<g id="edge8" class="edge">
+<title>QualityControl-&gt;Car</title>
+<path fill="none" stroke="black" d="M90.29,-485.13C100.3,-468.24 115.99,-441.77 129.95,-418.21"/>
+<polygon fill="black" stroke="black" points="132.95,-420.01 135.04,-409.62 126.93,-416.44 132.95,-420.01"/>
+<text text-anchor="middle" x="147.34" y="-430.8" font-family="Times,serif" font-size="14.00">inspects</text>
+</g>
+<!-- Dispatcher -->
+<g id="node8" class="node">
+<title>Dispatcher</title>
+<polygon fill="none" stroke="black" points="192.54,-688.7 192.54,-724.7 275.46,-724.7 275.46,-688.7 192.54,-688.7"/>
+<text text-anchor="middle" x="234" y="-705.6" font-family="Arial" font-size="14.00">Dispatcher</text>
+<polyline fill="none" stroke="black" points="192.54,-694.9 275.46,-694.9"/>
+</g>
+<!-- Dispatcher&#45;&gt;RepairZone -->
+<g id="edge7" class="edge">
+<title>Dispatcher-&gt;RepairZone</title>
+<path fill="none" stroke="black" d="M230.64,-688.35C228.31,-676.33 225.16,-660.04 222.47,-646.16"/>
+<polygon fill="black" stroke="black" points="225.98,-645.85 220.64,-636.7 219.1,-647.18 225.98,-645.85"/>
+<text text-anchor="middle" x="251.51" y="-657.6" font-family="Times,serif" font-size="14.00">manages</text>
+</g>
+<!-- Report -->
+<g id="node9" class="node">
+<title>Report</title>
+<polygon fill="none" stroke="black" points="143.68,-778.5 143.68,-878.5 322.32,-878.5 322.32,-778.5 143.68,-778.5"/>
+<text text-anchor="middle" x="233" y="-861.9" font-family="Arial" font-size="14.00">Report</text>
+<polyline fill="none" stroke="black" points="143.68,-853.7 322.32,-853.7"/>
+<text text-anchor="middle" x="233" y="-837.1" font-family="Arial" font-size="14.00">report_id : string</text>
+<text text-anchor="middle" x="233" y="-820.3" font-family="Arial" font-size="14.00">total_repairs : int</text>
+<text text-anchor="middle" x="233" y="-803.5" font-family="Arial" font-size="14.00">repair_statistics : string</text>
+<text text-anchor="middle" x="233" y="-786.7" font-family="Arial" font-size="14.00">repair_duration_avg : time</text>
+</g>
+<!-- Report&#45;&gt;RepairTeam -->
+<g id="edge9" class="edge">
+<title>Report-&gt;RepairTeam</title>
+<path fill="none" stroke="black" d="M189.69,-778.08C176.28,-762.79 162.06,-746.56 150.65,-733.54"/>
+<polygon fill="black" stroke="black" points="153.46,-731.44 144.24,-726.23 148.2,-736.06 153.46,-731.44"/>
+<text text-anchor="middle" x="194.42" y="-747.4" font-family="Times,serif" font-size="14.00">includes</text>
+</g>
+<!-- Report&#45;&gt;Worker -->
+<g id="edge10" class="edge">
+<title>Report-&gt;Worker</title>
+<path fill="none" stroke="black" d="M289.57,-778.06C306.19,-758.26 320,-733.92 320,-707.7 320,-707.7 320,-707.7 320,-203.3 320,-150.31 275.63,-108.71 233.63,-81.19"/>
+<polygon fill="black" stroke="black" points="235.76,-78.4 225.43,-76 232.01,-84.31 235.76,-78.4"/>
+<text text-anchor="middle" x="343.33" y="-499.3" font-family="Times,serif" font-size="14.00">includes</text>
+</g>
+</g>
+</svg>
