@@ -1,0 +1,183 @@
+<svg width="3673pt" height="218pt" viewBox="0.00 0.00 3673.15 217.67" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 213.67)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-213.67 3669.15,-213.67 3669.15,4 -4,4"/>
+<!-- start -->
+<g id="node1" class="node">
+<title>start</title>
+<ellipse fill="lightgreen" stroke="black" cx="91.08" cy="-104.58" rx="91.08" ry="91.08"/>
+<text text-anchor="middle" x="91.08" y="-100.38" font-family="Arial" font-size="14.00">Начало процесса</text>
+</g>
+<!-- defect_reported -->
+<g id="node2" class="node">
+<title>defect_reported</title>
+<polygon fill="lightgrey" stroke="black" points="461.68,-122.58 305.65,-122.58 305.65,-86.58 461.68,-86.58 461.68,-122.58"/>
+<text text-anchor="middle" x="383.66" y="-100.38" font-family="Arial" font-size="14.00">Сообщение о дефекте</text>
+</g>
+<!-- start&#45;&gt;defect_reported -->
+<g id="edge1" class="edge">
+<title>start-&gt;defect_reported</title>
+<path fill="none" stroke="black" d="M182.43,-104.58C218.06,-104.58 258.86,-104.58 294.29,-104.58"/>
+<polygon fill="black" stroke="black" points="294.08,-108.08 304.08,-104.58 294.08,-101.08 294.08,-108.08"/>
+<text text-anchor="middle" x="243.9" y="-108.78" font-family="Times,serif" font-size="14.00">Получен заказ</text>
+</g>
+<!-- defect_analysis -->
+<g id="node3" class="node">
+<title>defect_analysis</title>
+<polygon fill="lightgrey" stroke="black" points="619.7,-122.58 498.68,-122.58 498.68,-86.58 619.7,-86.58 619.7,-122.58"/>
+<text text-anchor="middle" x="559.19" y="-100.38" font-family="Arial" font-size="14.00">Анализ дефекта</text>
+</g>
+<!-- defect_reported&#45;&gt;defect_analysis -->
+<g id="edge2" class="edge">
+<title>defect_reported-&gt;defect_analysis</title>
+<path fill="none" stroke="black" d="M462.04,-104.58C470.33,-104.58 478.74,-104.58 486.96,-104.58"/>
+<polygon fill="black" stroke="black" points="486.9,-108.08 496.9,-104.58 486.9,-101.08 486.9,-108.08"/>
+</g>
+<!-- defect_requires_repair -->
+<g id="node11" class="node">
+<title>defect_requires_repair</title>
+<polygon fill="lightgrey" stroke="black" points="839.26,-122.58 656.7,-104.58 839.26,-86.58 1021.83,-104.58 839.26,-122.58"/>
+<text text-anchor="middle" x="839.26" y="-100.38" font-family="Arial" font-size="14.00">Дефект требует ремонта?</text>
+</g>
+<!-- defect_analysis&#45;&gt;defect_requires_repair -->
+<g id="edge3" class="edge">
+<title>defect_analysis-&gt;defect_requires_repair</title>
+<path fill="none" stroke="black" d="M620.18,-104.58C626.55,-104.58 633.25,-104.58 640.19,-104.58"/>
+<polygon fill="black" stroke="black" points="640.16,-108.08 650.16,-104.58 640.16,-101.08 640.16,-108.08"/>
+</g>
+<!-- assign_repair -->
+<g id="node4" class="node">
+<title>assign_repair</title>
+<polygon fill="lightgrey" stroke="black" points="1230.97,-156.58 1078.83,-156.58 1078.83,-120.58 1230.97,-120.58 1230.97,-156.58"/>
+<text text-anchor="middle" x="1154.9" y="-134.38" font-family="Arial" font-size="14.00">Назначение ремонта</text>
+</g>
+<!-- defect_repaired -->
+<g id="node5" class="node">
+<title>defect_repaired</title>
+<polygon fill="lightgrey" stroke="black" points="1621.81,-164.58 1500.79,-164.58 1500.79,-128.58 1621.81,-128.58 1621.81,-164.58"/>
+<text text-anchor="middle" x="1561.3" y="-142.38" font-family="Arial" font-size="14.00">Ремонт дефекта</text>
+</g>
+<!-- assign_repair&#45;&gt;defect_repaired -->
+<g id="edge6" class="edge">
+<title>assign_repair-&gt;defect_repaired</title>
+<path fill="none" stroke="black" d="M1231.02,-140.06C1304.84,-141.52 1416.68,-143.73 1489.12,-145.17"/>
+<polygon fill="black" stroke="black" points="1488.81,-148.66 1498.88,-145.36 1488.95,-141.66 1488.81,-148.66"/>
+</g>
+<!-- repair_completed -->
+<g id="node12" class="node">
+<title>repair_completed</title>
+<polygon fill="lightgrey" stroke="black" points="1899.55,-201.58 1766.31,-183.58 1899.55,-165.58 2032.79,-183.58 1899.55,-201.58"/>
+<text text-anchor="middle" x="1899.55" y="-179.38" font-family="Arial" font-size="14.00">Ремонт завершён?</text>
+</g>
+<!-- defect_repaired&#45;&gt;repair_completed -->
+<g id="edge7" class="edge">
+<title>defect_repaired-&gt;repair_completed</title>
+<path fill="none" stroke="black" d="M1594.82,-164.9C1608.3,-171.52 1624.38,-178.19 1639.81,-181.58 1694.97,-193.68 1758.34,-194.37 1808.57,-191.95"/>
+<polygon fill="black" stroke="black" points="1808.75,-195.45 1818.54,-191.41 1808.37,-188.46 1808.75,-195.45"/>
+<text text-anchor="middle" x="1694.06" y="-197.07" font-family="Times,serif" font-size="14.00">Завершить ремонт</text>
+</g>
+<!-- generate_report -->
+<g id="node6" class="node">
+<title>generate_report</title>
+<polygon fill="lightgrey" stroke="black" points="3434.99,-148.58 3298.42,-148.58 3298.42,-112.58 3434.99,-112.58 3434.99,-148.58"/>
+<text text-anchor="middle" x="3366.7" y="-126.38" font-family="Arial" font-size="14.00">Генерация отчёта</text>
+</g>
+<!-- end -->
+<g id="node10" class="node">
+<title>end</title>
+<ellipse fill="lightgreen" stroke="black" cx="3568.57" cy="-96.58" rx="96.58" ry="96.58"/>
+<text text-anchor="middle" x="3568.57" y="-92.38" font-family="Arial" font-size="14.00">Процесс завершён</text>
+</g>
+<!-- generate_report&#45;&gt;end -->
+<g id="edge14" class="edge">
+<title>generate_report-&gt;end</title>
+<path fill="none" stroke="black" d="M3435.37,-119.07C3443.89,-117.62 3452.76,-116.11 3461.7,-114.59"/>
+<polygon fill="black" stroke="black" points="3462.26,-118.04 3471.53,-112.91 3461.09,-111.14 3462.26,-118.04"/>
+</g>
+<!-- repair_feedback -->
+<g id="node7" class="node">
+<title>repair_feedback</title>
+<polygon fill="lightgrey" stroke="black" points="2207.7,-201.58 2082.79,-201.58 2082.79,-165.58 2207.7,-165.58 2207.7,-201.58"/>
+<text text-anchor="middle" x="2145.24" y="-179.38" font-family="Arial" font-size="14.00">Отзыв о ремонте</text>
+</g>
+<!-- quality_check -->
+<g id="node9" class="node">
+<title>quality_check</title>
+<polygon fill="lightgrey" stroke="black" points="2702.69,-197.58 2457.2,-197.58 2457.2,-161.58 2702.69,-161.58 2702.69,-197.58"/>
+<text text-anchor="middle" x="2579.94" y="-175.38" font-family="Arial" font-size="14.00">Проверка качества после ремонта</text>
+</g>
+<!-- repair_feedback&#45;&gt;quality_check -->
+<g id="edge10" class="edge">
+<title>repair_feedback-&gt;quality_check</title>
+<path fill="none" stroke="black" d="M2207.78,-183.01C2269.51,-182.44 2366.54,-181.54 2445.91,-180.81"/>
+<polygon fill="black" stroke="black" points="2445.51,-184.31 2455.48,-180.72 2445.45,-177.31 2445.51,-184.31"/>
+</g>
+<!-- update_status -->
+<g id="node8" class="node">
+<title>update_status</title>
+<polygon fill="lightgrey" stroke="black" points="1482.79,-102.58 1248.97,-102.58 1248.97,-66.58 1482.79,-66.58 1482.79,-102.58"/>
+<text text-anchor="middle" x="1365.88" y="-80.38" font-family="Arial" font-size="14.00">Обновление статуса автомобиля</text>
+</g>
+<!-- update_status&#45;&gt;end -->
+<g id="edge15" class="edge">
+<title>update_status-&gt;end</title>
+<path fill="none" stroke="black" d="M1483.12,-84.58C1545.39,-84.58 1623.41,-84.58 1693.06,-84.58 1693.06,-84.58 1693.06,-84.58 3367.7,-84.58 3397.91,-84.58 3430.64,-85.96 3460.7,-87.79"/>
+<polygon fill="black" stroke="black" points="3460.37,-91.27 3470.57,-88.41 3460.81,-84.29 3460.37,-91.27"/>
+<text text-anchor="middle" x="2332.45" y="-88.78" font-family="Times,serif" font-size="14.00">Автомобиль возвращён на конвейер</text>
+</g>
+<!-- repair_approval -->
+<g id="node13" class="node">
+<title>repair_approval</title>
+<polygon fill="lightgrey" stroke="black" points="2990.55,-148.58 2739.69,-130.58 2990.55,-112.58 3241.42,-130.58 2990.55,-148.58"/>
+<text text-anchor="middle" x="2990.55" y="-126.38" font-family="Arial" font-size="14.00">Необходим дополнительный ремонт?</text>
+</g>
+<!-- quality_check&#45;&gt;repair_approval -->
+<g id="edge11" class="edge">
+<title>quality_check-&gt;repair_approval</title>
+<path fill="none" stroke="black" d="M2702.98,-164.94C2759.97,-158.11 2827.2,-150.05 2882.21,-143.45"/>
+<polygon fill="black" stroke="black" points="2882.39,-146.95 2891.9,-142.29 2881.55,-140 2882.39,-146.95"/>
+</g>
+<!-- defect_requires_repair&#45;&gt;assign_repair -->
+<g id="edge4" class="edge">
+<title>defect_requires_repair-&gt;assign_repair</title>
+<path fill="none" stroke="black" d="M928.88,-114.18C972.2,-118.88 1024.14,-124.51 1067.2,-129.18"/>
+<polygon fill="black" stroke="black" points="1066.69,-132.64 1077.01,-130.24 1067.44,-125.68 1066.69,-132.64"/>
+<text text-anchor="middle" x="1050.33" y="-131.78" font-family="Times,serif" font-size="14.00">Да</text>
+</g>
+<!-- defect_requires_repair&#45;&gt;update_status -->
+<g id="edge5" class="edge">
+<title>defect_requires_repair-&gt;update_status</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M974.68,-99.45C1055.58,-96.37 1157.96,-92.46 1237.55,-89.43"/>
+<polygon fill="black" stroke="black" points="1237.25,-92.94 1247.11,-89.07 1236.99,-85.95 1237.25,-92.94"/>
+<text text-anchor="middle" x="1050.33" y="-100.9" font-family="Times,serif" font-size="14.00">Нет</text>
+</g>
+<!-- repair_completed&#45;&gt;defect_repaired -->
+<g id="edge9" class="edge">
+<title>repair_completed-&gt;defect_repaired</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1838.37,-173.4C1810.96,-169.03 1778.06,-164.16 1748.31,-160.78 1710.58,-156.48 1668.39,-153.14 1633.75,-150.78"/>
+<polygon fill="black" stroke="black" points="1634.02,-147.29 1623.81,-150.12 1633.56,-154.28 1634.02,-147.29"/>
+<text text-anchor="middle" x="1694.06" y="-164.98" font-family="Times,serif" font-size="14.00">Нет</text>
+</g>
+<!-- repair_completed&#45;&gt;repair_feedback -->
+<g id="edge8" class="edge">
+<title>repair_completed-&gt;repair_feedback</title>
+<path fill="none" stroke="black" d="M2036.29,-183.58C2048.21,-183.58 2059.96,-183.58 2071.06,-183.58"/>
+<polygon fill="black" stroke="black" points="2070.86,-187.08 2080.86,-183.58 2070.86,-180.08 2070.86,-187.08"/>
+<text text-anchor="middle" x="2057.79" y="-187.78" font-family="Times,serif" font-size="14.00">Да</text>
+</g>
+<!-- repair_approval&#45;&gt;defect_repaired -->
+<g id="edge12" class="edge">
+<title>repair_approval-&gt;defect_repaired</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M2732.89,-130.58C2682.51,-130.58 2630.07,-130.58 2580.94,-130.58 1898.55,-130.58 1898.55,-130.58 1898.55,-130.58 1806.98,-130.58 1701.54,-136.57 1633.51,-141.22"/>
+<polygon fill="black" stroke="black" points="1633.33,-137.72 1623.6,-141.91 1633.81,-144.71 1633.33,-137.72"/>
+<text text-anchor="middle" x="2145.24" y="-134.78" font-family="Times,serif" font-size="14.00">Да</text>
+</g>
+<!-- repair_approval&#45;&gt;generate_report -->
+<g id="edge13" class="edge">
+<title>repair_approval-&gt;generate_report</title>
+<path fill="none" stroke="black" d="M3248.35,-130.58C3261.88,-130.58 3274.84,-130.58 3286.88,-130.58"/>
+<polygon fill="black" stroke="black" points="3286.63,-134.08 3296.63,-130.58 3286.63,-127.08 3286.63,-134.08"/>
+<text text-anchor="middle" x="3269.92" y="-134.78" font-family="Times,serif" font-size="14.00">Нет</text>
+</g>
+</g>
+</svg>
