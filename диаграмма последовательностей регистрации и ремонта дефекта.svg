@@ -1,0 +1,117 @@
+<svg width="1147pt" height="137pt" viewBox="0.00 0.00 1147.23 137.02" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 133.02)">
+<title>SequenceDiagram</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-133.02 1143.23,-133.02 1143.23,4 -4,4"/>
+<!-- Car -->
+<g id="node1" class="node">
+<title>Car</title>
+<ellipse fill="none" stroke="black" cx="52.88" cy="-57.02" rx="27" ry="18"/>
+<text text-anchor="middle" x="52.88" y="-52.82" font-family="Times,serif" font-size="14.00">Car</text>
+</g>
+<!-- RepairZone -->
+<g id="node2" class="node">
+<title>RepairZone</title>
+<ellipse fill="none" stroke="black" cx="294.85" cy="-57.02" rx="59.03" ry="18"/>
+<text text-anchor="middle" x="294.85" y="-52.82" font-family="Times,serif" font-size="14.00">Repair Zone</text>
+</g>
+<!-- Car&#45;&gt;RepairZone -->
+<g id="edge1" class="edge">
+<title>Car-&gt;RepairZone</title>
+<path fill="none" stroke="black" d="M80.02,-57.02C114.32,-57.02 175.82,-57.02 224.09,-57.02"/>
+<polygon fill="black" stroke="black" points="223.91,-60.52 233.91,-57.02 223.91,-53.52 223.91,-60.52"/>
+<text text-anchor="middle" x="170.79" y="-61.22" font-family="Times,serif" font-size="14.00">arrives for repair</text>
+</g>
+<!-- RepairPlace -->
+<g id="node3" class="node">
+<title>RepairPlace</title>
+<ellipse fill="none" stroke="black" cx="586.06" cy="-109.02" rx="60.1" ry="18"/>
+<text text-anchor="middle" x="586.06" y="-104.82" font-family="Times,serif" font-size="14.00">Repair Place</text>
+</g>
+<!-- RepairZone&#45;&gt;RepairPlace -->
+<g id="edge2" class="edge">
+<title>RepairZone-&gt;RepairPlace</title>
+<path fill="none" stroke="black" d="M321.91,-73.29C336.13,-81.32 354.36,-90.28 371.88,-95.02 418.45,-107.64 472.73,-111.05 514.86,-111.35"/>
+<polygon fill="black" stroke="black" points="514.61,-114.85 524.62,-111.36 514.62,-107.85 514.61,-114.85"/>
+<text text-anchor="middle" x="439.92" y="-115.47" font-family="Times,serif" font-size="14.00">assign repair place</text>
+</g>
+<!-- Dispatcher -->
+<g id="node6" class="node">
+<title>Dispatcher</title>
+<ellipse fill="none" stroke="black" cx="586.06" cy="-47.02" rx="52.87" ry="18"/>
+<text text-anchor="middle" x="586.06" y="-42.82" font-family="Times,serif" font-size="14.00">Dispatcher</text>
+</g>
+<!-- RepairZone&#45;&gt;Dispatcher -->
+<g id="edge7" class="edge">
+<title>RepairZone-&gt;Dispatcher</title>
+<path fill="none" stroke="black" d="M338.54,-44.55C349.32,-41.93 360.95,-39.55 371.88,-38.22 423.25,-31.97 482.03,-35.16 524.84,-39.35"/>
+<polygon fill="black" stroke="black" points="524.38,-42.82 534.69,-40.37 525.1,-35.86 524.38,-42.82"/>
+<text text-anchor="middle" x="439.92" y="-42.42" font-family="Times,serif" font-size="14.00">notify repair completion</text>
+</g>
+<!-- RepairPlace&#45;&gt;RepairZone -->
+<g id="edge6" class="edge">
+<title>RepairPlace-&gt;RepairZone</title>
+<path fill="none" stroke="black" d="M555.9,-93C541.83,-86.02 524.45,-78.48 507.95,-74.22 461.52,-62.25 407.65,-57.99 365.81,-56.71"/>
+<polygon fill="black" stroke="black" points="365.95,-53.21 355.86,-56.46 365.77,-60.21 365.95,-53.21"/>
+<text text-anchor="middle" x="439.92" y="-78.42" font-family="Times,serif" font-size="14.00">return car to zone</text>
+</g>
+<!-- Worker -->
+<g id="node4" class="node">
+<title>Worker</title>
+<ellipse fill="none" stroke="black" cx="878.1" cy="-94.02" rx="40.53" ry="18"/>
+<text text-anchor="middle" x="878.1" y="-89.82" font-family="Times,serif" font-size="14.00">Worker</text>
+</g>
+<!-- RepairPlace&#45;&gt;Worker -->
+<g id="edge3" class="edge">
+<title>RepairPlace-&gt;Worker</title>
+<path fill="none" stroke="black" d="M646.54,-109.99C686.62,-110.19 740.64,-109.57 788.17,-106.02 801.27,-105.05 815.38,-103.41 828.42,-101.66"/>
+<polygon fill="black" stroke="black" points="828.64,-105.16 838.06,-100.31 827.67,-98.23 828.64,-105.16"/>
+<text text-anchor="middle" x="726.17" y="-114.21" font-family="Times,serif" font-size="14.00">diagnosis and repair</text>
+</g>
+<!-- Worker&#45;&gt;RepairPlace -->
+<g id="edge5" class="edge">
+<title>Worker-&gt;RepairPlace</title>
+<path fill="none" stroke="black" d="M839.55,-88.18C796.83,-82.52 725.08,-76.04 664.16,-85.22 654.9,-86.62 645.22,-88.91 635.98,-91.53"/>
+<polygon fill="black" stroke="black" points="634.98,-88.18 626.41,-94.42 637,-94.88 634.98,-88.18"/>
+<text text-anchor="middle" x="726.17" y="-89.42" font-family="Times,serif" font-size="14.00">fix defect</text>
+</g>
+<!-- Defect -->
+<g id="node5" class="node">
+<title>Defect</title>
+<ellipse fill="none" stroke="black" cx="1102.46" cy="-94.02" rx="36.77" ry="18"/>
+<text text-anchor="middle" x="1102.46" y="-89.82" font-family="Times,serif" font-size="14.00">Defect</text>
+</g>
+<!-- Worker&#45;&gt;Defect -->
+<g id="edge4" class="edge">
+<title>Worker-&gt;Defect</title>
+<path fill="none" stroke="black" d="M919.11,-94.02C957.01,-94.02 1013.93,-94.02 1054.08,-94.02"/>
+<polygon fill="black" stroke="black" points="1053.94,-97.52 1063.94,-94.02 1053.94,-90.52 1053.94,-97.52"/>
+<text text-anchor="middle" x="1007.86" y="-98.22" font-family="Times,serif" font-size="14.00">register defect</text>
+</g>
+<!-- QualityControl -->
+<g id="node8" class="node">
+<title>QualityControl</title>
+<ellipse fill="none" stroke="black" cx="878.1" cy="-31.02" rx="71.93" ry="18"/>
+<text text-anchor="middle" x="878.1" y="-26.82" font-family="Times,serif" font-size="14.00">Quality Control</text>
+</g>
+<!-- Dispatcher&#45;&gt;QualityControl -->
+<g id="edge8" class="edge">
+<title>Dispatcher-&gt;QualityControl</title>
+<path fill="none" stroke="black" d="M638.58,-44.18C682.24,-41.77 745.61,-38.28 796.06,-35.49"/>
+<polygon fill="black" stroke="black" points="795.97,-39 805.76,-34.96 795.58,-32.01 795.97,-39"/>
+<text text-anchor="middle" x="726.17" y="-46.93" font-family="Times,serif" font-size="14.00">send for quality check</text>
+</g>
+<!-- Supervisor -->
+<g id="node7" class="node">
+<title>Supervisor</title>
+<ellipse fill="none" stroke="black" cx="52.88" cy="-111.02" rx="52.88" ry="18"/>
+<text text-anchor="middle" x="52.88" y="-106.82" font-family="Times,serif" font-size="14.00">Supervisor</text>
+</g>
+<!-- QualityControl&#45;&gt;RepairZone -->
+<g id="edge9" class="edge">
+<title>QualityControl-&gt;RepairZone</title>
+<path fill="none" stroke="black" d="M816.01,-21.65C769.56,-15.01 704.01,-6.69 646.16,-3.22 523.85,4.11 490.48,-0.23 371.88,-31.02 362.66,-33.42 352.95,-36.38 343.67,-39.45"/>
+<polygon fill="black" stroke="black" points="342.8,-36.05 334.45,-42.57 345.05,-42.67 342.8,-36.05"/>
+<text text-anchor="middle" x="586.06" y="-7.42" font-family="Times,serif" font-size="14.00">report completion</text>
+</g>
+</g>
+</svg>
